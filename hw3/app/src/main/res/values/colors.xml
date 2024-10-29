@@ -1,0 +1,6 @@
+<resources>
+    <color name="displayBackground">#FFDDDDDD</color>
+    <color name="displayText">#FF000000</color>
+    <color name="buttonBackground">#FFEEEEEE</color>
+    <color name="buttonText">#FF000000</color>
+</resources>

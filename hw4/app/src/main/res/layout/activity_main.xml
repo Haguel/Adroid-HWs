@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ПІП"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Вік"
+            app:layout_constraintTop_toBottomOf="@id/etName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <SeekBar
+            android:id="@+id/sbSalary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:max="100000"
+            app:layout_constraintTop_toBottomOf="@id/etAge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <TextView
+            android:id="@+id/tvSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Зарплатня: 0 USD"
+            app:layout_constraintTop_toBottomOf="@id/sbSalary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <CheckBox
+            android:id="@+id/cbExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Досвід роботи від 2 років"
+            app:layout_constraintTop_toBottomOf="@id/tvSalary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <CheckBox
+            android:id="@+id/cbTeamSkills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Навички командної розробки"
+            app:layout_constraintTop_toBottomOf="@id/cbExperience"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <CheckBox
+            android:id="@+id/cbTravel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Готовність до відряджень"
+            app:layout_constraintTop_toBottomOf="@id/cbTeamSkills"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <!-- Question 1 -->
+        <TextView
+            android:id="@+id/tvQuestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the size of int in Java?"
+            app:layout_constraintTop_toBottomOf="@id/cbTravel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvQuestion1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5">
+
+            <RadioButton
+                android:id="@+id/rbOption1Q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 bytes" />
+
+            <RadioButton
+                android:id="@+id/rbOption2Q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8 bytes" />
+
+            <RadioButton
+                android:id="@+id/correctAnswerQ1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 bytes" />
+        </RadioGroup>
+
+        <!-- Repeat for other questions -->
+        <TextView
+            android:id="@+id/tvQuestion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the default value of boolean in Java?"
+            app:layout_constraintTop_toBottomOf="@id/rgQuestion1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvQuestion2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5">
+
+            <RadioButton
+                android:id="@+id/rbOption1Q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="true" />
+
+            <RadioButton
+                android:id="@+id/correctAnswerQ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="false" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvQuestion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the parent class of all classes in Java?"
+            app:layout_constraintTop_toBottomOf="@id/rgQuestion2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvQuestion3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5">
+
+            <RadioButton
+                android:id="@+id/rbOption1Q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interface" />
+
+            <RadioButton
+                android:id="@+id/rbOption2Q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class" />
+
+            <RadioButton
+                android:id="@+id/correctAnswerQ3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Object" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvQuestion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the keyword to inherit a class in Java?"
+            app:layout_constraintTop_toBottomOf="@id/rgQuestion3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvQuestion4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5">
+
+            <RadioButton
+                android:id="@+id/rbOption1Q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="inherits" />
+
+            <RadioButton
+                android:id="@+id/rbOption2Q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="implements" />
+
+            <RadioButton
+                android:id="@+id/correctAnswerQ4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="extends" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvQuestion5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the keyword to define a value that initialize once and can not be change anymore in Java?"
+            app:layout_constraintTop_toBottomOf="@id/rgQuestion4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <RadioGroup
+            android:id="@+id/rgQuestion5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvQuestion5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5">
+
+            <RadioButton
+                android:id="@+id/rbOption1Q5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="end" />
+
+            <RadioButton
+                android:id="@+id/rbOption2Q5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="const" />
+
+            <RadioButton
+                android:id="@+id/correctAnswerQ5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="final" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Здати тест"
+            android:enabled="true"
+            app:layout_constraintTop_toBottomOf="@id/rgQuestion5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Результат"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/btnSubmit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
