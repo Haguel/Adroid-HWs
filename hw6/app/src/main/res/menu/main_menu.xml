@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_edit_text"
+        android:title="Редагувати текст" />
+    <item
+        android:id="@+id/action_select_text"
+        android:title="Обрати текст" />
+    <item
+        android:id="@+id/action_get_time"
+        android:title="Отримати поточний час" />
+    <item
+        android:id="@+id/action_change_date"
+        android:title="Змінити дату" />
+    <item
+        android:id="@+id/action_notify"
+        android:title="Виклик сповіщення" />
+</menu>
