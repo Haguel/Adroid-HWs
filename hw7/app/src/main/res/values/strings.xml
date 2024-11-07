@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HW7</string>
+    <string name="brand_hint">Brand</string>
+    <string name="model_hint">Model</string>
+    <string name="year_from_hint">Year From</string>
+    <string name="year_to_hint">Year To</string>
+    <string name="cost_from_hint">Cost From</string>
+    <string name="cost_to_hint">Cost To</string>
+    <string name="matches_found">Matches found: %1$d</string>
+    <string name="matches_button">Matches</string>
+    <string name="search">Search</string>
+</resources>
