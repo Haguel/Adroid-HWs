@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">hw11</string>
+    <string name="progress">0%</string>
+    <string name="startBtn">Start</string>
+    <string name="cancelBtn">Cancel</string>
+    <string name="statusBtn">Status: Pending</string>
+</resources>
